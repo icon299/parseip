@@ -31,7 +31,8 @@ public class Parse {
     
     public String doMatcher(String line){
         Matcher m = getMyPattern().matcher(line);
-        return = m.find() ? m.group(): null;
+     //   return = m.find() ? m.group(): null;
+     return "";
     }
     
 }
