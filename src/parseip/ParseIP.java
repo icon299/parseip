@@ -13,12 +13,13 @@ import java.util.regex.Pattern;
  */
 public class ParseIP {
 
-    String parseStr = "(?<!\\d|\\d\\.)" +
+    private static String parseStr = "(?<!\\d|\\d\\.)" +
             "(?:[01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
             "(?:[01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
             "(?:[01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
             "(?:[01]?\\d\\d?|2[0-4]\\d|25[0-5])" +
             "(?!\\d|\\.\\d)";
+
     private Pattern myPattern;
     
     public Pattern getMyPattern() {
